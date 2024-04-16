@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 20px;
+    text-align: center;
+}
+
+.espaco-de-metas,
+.espaco-de-habitos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.metas-estabelecida,
+.habitos-estabelecidos {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.metas-estabelecida {
+    background-color: aqua;
+    width: 20vw;
+    height: 25vh;
+}
+
+.habitos-estabelecidos {
+    background-color: lightgreen;
+    width: 20vw;
+    height: 25vh;
+}
+
+.espaco-de-input {
+    margin-top: 10px;
+}
+
+#adicionar-meta,
+#adicionar-habito {
+    width: 10%;
+    height: 3vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.botao-excluir {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-label span {
+    display: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 20px;
+    text-align: center;
+}
+
+.espaco-de-metas,
+.espaco-de-habitos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.metas-estabelecida,
+.habitos-estabelecidos {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.metas-estabelecida,
+.habitos-estabelecidos {
+    width: 90%; /* Alterado para ocupar 90% da largura */
+    max-width: 400px; /* Limitando a largura máxima */
+}
+
+.espaco-de-input {
+    margin-top: 10px;
+}
+
+#adicionar-meta,
+#adicionar-habito {
+    width: 100%; /* Alterado para ocupar 100% da largura */
+    height: 3vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-label span {
+    display: none;
+}
+
+.botao-excluir {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Adicionando regras de mídia para tornar o layout responsivo */
+@media only screen and (min-width: 600px) {
+    .espaco-de-metas,
+    .espaco-de-habitos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .metas-estabelecida,
+    .habitos-estabelecidos {
+        width: 40%; /* Dividindo em duas colunas */
+        max-width: none; /* Removendo a largura máxima */
+    }
+}
+
+

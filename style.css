@@ -167,5 +167,29 @@ body {
         max-width: none; /* Removendo a largura máxima */
     }
 }
+.chat-lembretes {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 90%; /* Ajuste da largura */
+    max-width: 400px; /* Limitando a largura máxima */
+    margin: auto; /* Centralizando horizontalmente */
+}
 
+/* Estilos das mensagens de lembretes */
+.mensagem-bot {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
+.mensagem-usuario {
+    background-color: #e2f3f5;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

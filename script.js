@@ -115,3 +115,59 @@ function atualizarProgresso() {
         progressMessage.textContent = "";
     }
 }
+// Função para adicionar lembretes sobre metas e hábitos
+function adicionarLembrete(mensagem, tipo) {
+    var chatLembretes = document.getElementById("chat-lembretes");
+    var novaMensagem = document.createElement("div");
+    novaMensagem.classList.add("mensagem-" + tipo);
+    novaMensagem.innerHTML = "<p>" + mensagem + "</p>";
+    chatLembretes.appendChild(novaMensagem);
+}
+
+// Função para verificar e adicionar lembretes
+function verificarLembretes() {
+    var metas = document.querySelectorAll('#meta-estabelecida p');
+    var habitos = document.querySelectorAll('#habitos-estabelecidos p');
+
+    if (metas.length === 0 && habitos.length === 0) {
+        adicionarLembrete("Você ainda não estabeleceu metas ou hábitos. Que tal começar agora?", "bot");
+    } else {
+        if (metas.length === 0) {
+            adicionarLembrete("Você ainda não estabeleceu metas. Que tal definir algumas?", "bot");
+        } else {
+            adicionarLembrete("Lembre-se de trabalhar nas suas metas diariamente!", "bot");
+        }
+
+        if (habitos.length === 0) {
+            adicionarLembrete("Você ainda não estabeleceu hábitos. Que tal adquirir alguns?", "bot");
+        } else {
+            adicionarLembrete("Lembre-se de praticar seus hábitos diariamente!", "bot");
+        }
+    }
+}
+
+// Chamar a função para verificar lembretes quando a página carregar
+window.onload = function() {
+    verificarLembretes();
+};
+
+function verificarLembretes() {
+    var metas = document.querySelectorAll('#meta-estabelecida p');
+    var habitos = document.querySelectorAll('#habitos-estabelecidos p');
+
+    if (metas.length === 0 && habitos.length === 0) {
+        adicionarLembrete("Você ainda não estabeleceu metas ou hábitos. Que tal começar agora?", "bot");
+    } else {
+        if (metas.length === 0) {
+            adicionarLembrete("Você ainda não estabeleceu metas. Que tal definir algumas?", "bot");
+        } else {
+            adicionarLembrete("Lembre-se de trabalhar nas suas metas diariamente!", "bot");
+        }
+
+        if (habitos.length === 0) {
+            adicionarLembrete("Você ainda não estabeleceu hábitos. Que tal adquirir alguns?", "bot");
+        } else {
+            adicionarLembrete("Lembre-se de praticar seus hábitos diariamente!", "bot");
+        }
+    }
+}
